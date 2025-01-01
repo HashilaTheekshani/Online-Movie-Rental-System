@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+    <movie>
+        <id>1</id>
+        <title>The Shawshank Redemption</title>
+        <genre>Drama</genre>
+        <release_year>1994</release_year>
+        <rating>R</rating>
+        <available>true</available>
+    </movie>
+    <movie>
+        <id>2</id>
+        <title>The Godfather</title>
+        <genre>Crime</genre>
+        <release_year>1972</release_year>
+        <rating>R</rating>
+        <available>true</available>
+    </movie>
+    <movie>
+        <id>3</id>
+        <title>Inception</title>
+        <genre>Sci-Fi</genre>
+        <release_year>2010</release_year>
+        <rating>R</rating>
+        <available>true</available>
+    </movie>
+<movie id="5"><title>Avatar</title><genre>Drama</genre><release_year>2024</release_year><rating>10</rating><available>true</available></movie><movie id="6"><title>The-100</title><genre>Tv-series</genre><release_year>2020</release_year><rating>7</rating><available>true</available></movie><movie id="7"><title>Race</title><genre>film</genre><release_year>2022</release_year><rating>10</rating><available>true</available></movie></movies>

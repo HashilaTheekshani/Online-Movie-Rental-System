@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user id="1">
+        <username>steve</username>
+        <password>password123</password>
+        <rentals>
+            <rental>
+                <movie_id>1</movie_id>
+                <rented_on>2024-09-01</rented_on>
+                <returned>false</returned>
+            </rental>
+        </rentals>
+    </user>
+<user><id>3</id><username>Hashila</username><password>$2y$10$gETTg3ZxIwuccZhQIW6kE.FvVa9g6qe667m9ngm06QWCOSFkEyFO.</password><rentals><rental><movie_id>1</movie_id><rented_on>2024-10-21</rented_on><returned>false</returned></rental><rental><movie_id>2</movie_id><rented_on>2024-10-21</rented_on><returned>false</returned></rental></rentals></user><user><id>4</id><username>Munisha</username><password>$2y$10$G/JT0CbtRCFAI/JD2LeA4uReGjKJLHuyPCmhkyJ18l.lMHrAKU.I2</password><rentals/></user><user><id>5</id><username>Kavindi</username><password>$2y$10$Atg/apvxG/ccV8w7evAdmO3h.bQtMr.yOy7GkZbIzp.IlLTTkMf4S</password><rentals><rental><movie_id>null</movie_id><rented_on>2024-10-21</rented_on><returned>false</returned></rental><rental><movie_id>null</movie_id><rented_on>2024-10-21</rented_on><returned>false</returned></rental></rentals></user><user><id>6</id><username>admin</username><password>$2y$10$YcSqtSZpvIOyh4p00ZbW0eyze1wJ7ydAr094tlillwzubBeY0TXCO</password><rentals/></user></users>

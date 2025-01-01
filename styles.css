@@ -1,0 +1,378 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cfe6e6;
+    color: #f5eded;
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('pictures/images1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.5s ease-in-out; 
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #213488;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky; /* Keeps the header fixed on top when scrolling */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo or Site Title */
+.logo h1 {
+    color: #fff;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #53a0cc;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Navigation Menu */
+
+
+nav ul.menu {
+    display: flex;
+    list-style: none;
+    
+}
+
+/* Menu Items */
+nav ul.menu li {
+    margin-left: 30px;
+    
+
+}
+
+/* Menu Links */
+nav ul.menu li a {
+    text-decoration: none;
+    color: #bdb3b3;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    
+    
+}
+
+/* Menu Links Hover Effect */
+nav ul.menu li a:hover {
+    color: #070706;
+    text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul.menu {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul.menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+/* Styles for the movie list container */
+#movieList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between movie cards */
+    padding: 20px;
+    justify-content: center; /* Center align the movie cards */
+}
+
+/* Styles for each movie card */
+#movieList div {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px; /* Width of each movie card */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+    text-align: center; /* Center align text inside the cards */
+}
+
+/* Heading (Movie Title) Styles */
+#movieList div h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph (Movie Details) Styles */
+#movieList div p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Hover effect for movie cards */
+#movieList div:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Make the movie list responsive */
+@media (max-width: 768px) {
+    #movieList {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center;
+    }
+
+    #movieList div {
+        width: 90%; /* Make cards full-width on smaller screens */
+    }
+}
+
+
+
+
+
+
+/* Styling for the movie container */
+.movie-container {
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #534343;
+    width: 350px;
+    display: inline-block;
+   
+    
+    
+}
+
+/* Style for movie title */
+.movie-container h3 {
+    margin: 0 0 10px 0;
+    color: #042133;
+    font-size: 1.5em;
+}
+
+/* Style for the movie details */
+.movie-container p {
+    margin: 5px 0;
+}
+
+/* Style for buttons */
+.movie-container button {
+    background-color: #042133;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.movie-container button:hover {
+    background-color: #054b74;
+}
+
+/* Active effect for buttons */
+.movie-container button:active {
+    transform: scale(0.98);
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    color: #070606;
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.2s ease-in-out; /* Heading slide-in effect */
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f700ff;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #007BFF;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4); /* Glowing effect */
+}
+
+/* Form Styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    animation: slideUp 0.8s ease-out; /* Slide in from the bottom */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #070606;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Focus glow effect */
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    top: 270px; /* Adjust this value to move the footer down */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links li a {
+    color: rgb(24, 20, 20);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #f39c12;
+}
